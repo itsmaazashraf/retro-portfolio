@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Software Engineer Portfolio — Retro Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="titlebar">
+      <div class="title">Software Engineer Portfolio</div>
+      <div class="controls">
+        <button id="printBtn" class="btn">Print / Save as PDF</button>
+      </div>
+    </header>
+
+    <section class="card">
+      <div class="grid grid-2">
+        <div class="th">Name</div>
+        <div class="td filled">Alex Engineer</div>
+
+        <div class="th">Role</div>
+        <div class="td filled">Senior Software Engineer</div>
+
+        <div class="th">Location</div>
+        <div class="td filled">San Francisco, CA (Remote-friendly)</div>
+
+        <div class="th">Email</div>
+        <div class="td filled"><a href="mailto:alex.engineer@example.com">alex.engineer@example.com</a></div>
+
+        <div class="th">Website</div>
+        <div class="td filled"><a href="https://example.dev" target="_blank" rel="noreferrer">example.dev</a></div>
+
+        <div class="th">Links</div>
+        <div class="td filled">
+          <a href="https://github.com/example" target="_blank" rel="noreferrer">GitHub</a> ·
+          <a href="https://www.linkedin.com/in/example" target="_blank" rel="noreferrer">LinkedIn</a> ·
+          <a href="https://x.com/example" target="_blank" rel="noreferrer">X</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-title">Summary</div>
+      <div class="textarea like">
+        Builder of reliable, human-centered software. 10+ years across web, platform,
+        and cloud systems. I lead end-to-end: product discovery, system design, code,
+        and operations. I value clarity, empathy, and measurable outcomes.
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-title">Core Skills</div>
+      <div class="grid grid-2">
+        <div class="th">Languages</div>
+        <div class="td filled">TypeScript, Python, Go, SQL</div>
+        <div class="th">Frameworks</div>
+        <div class="td filled">React, Node.js, Next.js, FastAPI</div>
+        <div class="th">Cloud/DevOps</div>
+        <div class="td filled">AWS, Docker, Terraform, CI/CD</div>
+        <div class="th">Practices</div>
+        <div class="td filled">Design reviews, testing, observability, accessibility</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-title">Experience</div>
+      <div class="table like">
+        <div class="row">
+          <div class="cell left">2022–Present</div>
+          <div class="cell right">
+            <div class="job-title">Staff Engineer — Acme AI</div>
+            <div class="job-notes">Led migration to event-driven architecture; reduced API latency 45%.
+              Mentored 6 engineers; instituted instrumentation-first dev workflow.</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="cell left">2018–2022</div>
+          <div class="cell right">
+            <div class="job-title">Senior Software Engineer — CloudCo</div>
+            <div class="job-notes">Shipped multi-tenant platform handling 50k req/s.
+              Designed RBAC and zero-downtime deploys.</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="cell left">2014–2018</div>
+          <div class="cell right">
+            <div class="job-title">Full‑stack Engineer — StartupLab</div>
+            <div class="job-notes">Built React + GraphQL app from zero to 200k MAU.
+              Drove analytics and growth experiments.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-title">Selected Projects</div>
+      <div class="grid grid-2">
+        <div class="th">Realtime Notes</div>
+        <div class="td filled">CRDT-based notes app with offline-first sync; 99.99% durability.</div>
+        <div class="th">Image Diffusion UI</div>
+        <div class="td filled">GPU job queue + streaming previews; reduced cost 30%.</div>
+        <div class="th">Data Contracts</div>
+        <div class="td filled">Schema validation in CI; eliminated 80% breaking changes.</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-title">Education & Certs</div>
+      <div class="grid grid-2">
+        <div class="th">B.S., Computer Science</div>
+        <div class="td filled">University of Example, 2014</div>
+        <div class="th">AWS Certified</div>
+        <div class="td filled">Solutions Architect (Associate)</div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>Last updated: <span id="lastUpdated"></span></div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

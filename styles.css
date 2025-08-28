@@ -1,0 +1,108 @@
+/* Retro form-inspired portfolio */
+:root{
+  --ink:#111;
+  --paper:#f5f4ff;
+  --chrome:#c9c6ff;
+  --stroke:#6f6da8;
+  --muted:#4b4a72;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: ui-serif, Georgia, "Times New Roman", serif;
+  color:var(--ink);
+  background:#111;
+}
+.page{
+  background:var(--paper);
+  min-height:100%;
+  max-width:960px;
+  margin:0 auto;
+  padding:16px;
+  border:4px solid var(--stroke);
+  box-shadow:0 0 0 6px var(--chrome), 0 0 0 10px #000;
+}
+.titlebar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:var(--chrome);
+  border:2px solid var(--stroke);
+  padding:6px 8px;
+  margin-bottom:12px;
+}
+.title{
+  font-weight:700;
+  font-size:22px;
+  letter-spacing:.5px;
+}
+.controls .btn{
+  border:2px solid var(--stroke);
+  background:#efefff;
+  padding:6px 10px;
+  font-weight:600;
+  cursor:pointer;
+}
+.controls .btn:active{transform:translateY(1px)}
+.card{
+  border:2px solid var(--stroke);
+  margin:10px 0;
+  background:white;
+}
+.section-title{
+  background:var(--chrome);
+  border-bottom:2px solid var(--stroke);
+  padding:6px 8px;
+  font-weight:700;
+}
+.grid{
+  display:grid;
+}
+.grid-2{
+  grid-template-columns:240px 1fr;
+}
+.th,.td{
+  border-right:2px solid var(--stroke);
+  border-bottom:2px solid var(--stroke);
+  padding:10px;
+}
+.th{
+  background:#fafaff;
+  font-weight:700;
+}
+.td{
+  background:#fff;
+}
+.filled{
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  font-size:15px;
+}
+.textarea.like{
+  padding:12px;
+  border-top:2px solid var(--stroke);
+}
+.table.like{
+  display:block;
+}
+.row{
+  display:grid;
+  grid-template-columns:160px 1fr;
+  border-bottom:2px solid var(--stroke);
+}
+.cell{padding:10px}
+.cell.left{background:#fafaff;border-right:2px solid var(--stroke);font-weight:700}
+.job-title{font-weight:700;margin-bottom:4px}
+.job-notes{color:var(--muted)}
+.footer{
+  margin-top:14px;
+  background:var(--chrome);
+  border:2px solid var(--stroke);
+  padding:6px 8px;
+  text-align:right;
+}
+@media print{
+  body{background:white}
+  .page{box-shadow:none;border-color:#000}
+  .controls{display:none}
+}
