@@ -3,122 +3,173 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Software Engineer Portfolio — Retro Form</title>
-  <link rel="stylesheet" href="styles.css">
+      <title>Maaz Ashraf — Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+     
 </head>
 <body>
+  <!-- Retro Loading Screen -->
+  <div class="loading-screen">
+    <div class="loading-text">
+      LOADING SYSTEM...<br>
+      <span style="font-size: 16px; margin-top: 20px; display: block;">PRESS ANY KEY TO CONTINUE</span>
+    </div>
+  </div>
+
+  <!-- Retro Mode Toggle -->
+  <div class="retro-mode" id="retroMode">RETRO MODE</div>
+
   <div class="page">
     <header class="titlebar">
       <div class="title">Software Engineer Portfolio</div>
       <div class="controls">
-        <button id="printBtn" class="btn">Print / Save as PDF</button>
+        <button id="printBtn" class="btn">View Resume</button>
       </div>
     </header>
 
     <section class="card">
       <div class="grid grid-2">
         <div class="th">Name</div>
-        <div class="td filled">Alex Engineer</div>
+        <div class="td filled">Maaz Ashraf</div>
 
         <div class="th">Role</div>
         <div class="td filled">Senior Software Engineer</div>
 
         <div class="th">Location</div>
-        <div class="td filled">San Francisco, CA (Remote-friendly)</div>
+        <div class="td filled">Lahore, Pakistan (Remote-friendly)</div>
 
         <div class="th">Email</div>
-        <div class="td filled"><a href="mailto:alex.engineer@example.com">alex.engineer@example.com</a></div>
+        <div class="td filled"><a href="mailto:itsmaazashraf@gmail.com">itsmaazashraf@gmail.com</a></div>
 
-        <div class="th">Website</div>
-        <div class="td filled"><a href="https://example.dev" target="_blank" rel="noreferrer">example.dev</a></div>
+        <div class="th">Phone</div>
+        <div class="td filled">+92 311 5151006</div>
 
         <div class="th">Links</div>
         <div class="td filled">
-          <a href="https://github.com/example" target="_blank" rel="noreferrer">GitHub</a> ·
-          <a href="https://www.linkedin.com/in/example" target="_blank" rel="noreferrer">LinkedIn</a> ·
-          <a href="https://x.com/example" target="_blank" rel="noreferrer">X</a>
+          <a href="https://www.linkedin.com/in/maaz-ashraf" target="_blank" rel="noreferrer">LinkedIn</a> ·
+          <a href="https://github.com/itsmaazashraf" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </div>
     </section>
 
     <section class="card">
-      <div class="section-title">Summary</div>
+              <div class="section-title glitch" data-text="Summary">Summary</div>
       <div class="textarea like">
-        Builder of reliable, human-centered software. 10+ years across web, platform,
-        and cloud systems. I lead end-to-end: product discovery, system design, code,
-        and operations. I value clarity, empathy, and measurable outcomes.
+        Results-driven Backend Engineer with 5+ years of experience designing and deploying
+        scalable, event-driven systems across identity, data, and enterprise SaaS platforms.
+        Specialized in building high-performance APIs, distributed services, and cloud-native
+        architectures using Node.js, TypeScript, SQL, and AWS. Proficient with Lambda, SQS,
+        SNS, DynamoDB, and EC2 to ensure high availability, fault tolerance, and cost
+        efficiency. Built a high-scale identity search system for 800M+ users using
+        Elasticsearch with sub-500ms latency, and rearchitected critical backend services to
+        reduce execution time by over 90%.
       </div>
     </section>
 
     <section class="card">
-      <div class="section-title">Core Skills</div>
+              <div class="section-title glitch" data-text="Core Skills">Core Skills</div>
       <div class="grid grid-2">
         <div class="th">Languages</div>
-        <div class="td filled">TypeScript, Python, Go, SQL</div>
+        <div class="td filled">JavaScript, TypeScript, Python, SQL, Bash</div>
         <div class="th">Frameworks</div>
-        <div class="td filled">React, Node.js, Next.js, FastAPI</div>
-        <div class="th">Cloud/DevOps</div>
-        <div class="td filled">AWS, Docker, Terraform, CI/CD</div>
-        <div class="th">Practices</div>
-        <div class="td filled">Design reviews, testing, observability, accessibility</div>
+        <div class="td filled">Node.js, Nest.js, Express.js, Next.js, React.js</div>
+        <div class="th">APIs</div>
+        <div class="td filled">GraphQL, RESTful APIs</div>
+        <div class="th">Databases</div>
+        <div class="td filled">MongoDB, MySQL, PostgreSQL, DynamoDB</div>
+        <div class="th">Version Control</div>
+        <div class="td filled">Git, GitHub, GitLab, BitBucket</div>
+        <div class="th">Cloud & DevOps</div>
+        <div class="td filled">AWS (API Gateway, Lambda, S3, Cognito, EC2, SQS, EventBridge, CloudFormation, Athena, Step Functions), GCP, Docker, Kubernetes, Nginx, GitHub Actions, IaC</div>
       </div>
     </section>
 
     <section class="card">
-      <div class="section-title">Experience</div>
+              <div class="section-title glitch" data-text="Experience">Experience</div>
       <div class="table like">
         <div class="row">
-          <div class="cell left">2022–Present</div>
+          <div class="cell left">Sep 2023 – Present</div>
           <div class="cell right">
-            <div class="job-title">Staff Engineer — Acme AI</div>
-            <div class="job-notes">Led migration to event-driven architecture; reduced API latency 45%.
-              Mentored 6 engineers; instituted instrumentation-first dev workflow.</div>
+            <div class="job-title">Lead Backend Engineer — Revcloud / Alyson.ai</div>
+            <div class="job-notes">
+              <ul>
+                <li>Identity-graph system to detect/enrich unconverted users; +30% leads, +20% CVR, +15% RPC, +$300K/quarter.</li>
+                <li>High-scale identity platform (800M+ identities) with Elasticsearch search delivering sub‑500ms results; +20% revenue.</li>
+                <li>Re‑architected intelligent router with AWS (Lambda, ElastiCache, CloudWatch, EventBridge); 1500ms → &lt;300ms.</li>
+                <li>CSV onboarding with AI entity detection and 30+ connectors (Google, Meta, Salesforce, FreshSales); 70% manual reduction.</li>
+                <li>Search engine indexing 80M+ people and 100M+ locations; −70% latency, &lt;500ms responses, +20% conversions.</li>
+                <li>Dataset management over S3 with Athena Express for low‑latency querying; CI/CD and IaC via GitHub Actions & CloudFormation.</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="row">
-          <div class="cell left">2018–2022</div>
+          <div class="cell left">Jul 2022 – Aug 2023</div>
           <div class="cell right">
-            <div class="job-title">Senior Software Engineer — CloudCo</div>
-            <div class="job-notes">Shipped multi-tenant platform handling 50k req/s.
-              Designed RBAC and zero-downtime deploys.</div>
+            <div class="job-title">Senior Software Engineer — Nextbridge Pvt Ltd</div>
+            <div class="job-notes">
+              <ul>
+                <li>Built enterprise HR automation platform; 70% improvement in recruitment efficiency.</li>
+                <li>Calendly‑style scheduling tool; removed third‑party dependency.</li>
+                <li>Attendance automation bot for hybrid/remote teams.</li>
+                <li>Modular NestJS/Node.js backend for multi‑portal SaaS; integrated Twilio, SendGrid, Stripe, HubSpot, Webflow.</li>
+                <li>Optimized MongoDB aggregates; &gt;50% faster queries. Increased test coverage +25% with Jest/SuperTest.</li>
+                <li>Managed AWS (EC2, S3, Lambda, CloudWatch) and automated CI/CD with GitHub Actions; −60% manual deploy effort.</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="row">
-          <div class="cell left">2014–2018</div>
+          <div class="cell left">Jan 2021 – Jul 2022</div>
           <div class="cell right">
-            <div class="job-title">Full‑stack Engineer — StartupLab</div>
-            <div class="job-notes">Built React + GraphQL app from zero to 200k MAU.
-              Drove analytics and growth experiments.</div>
+            <div class="job-title">Backend Engineer — TDC (The Dev Corporate)</div>
+            <div class="job-notes">
+              <ul>
+                <li>Peoppl: employee engagement platform — gifting system, internal e‑store, certificate generation.</li>
+                <li>Transactional workflows for reward redemption, inventory, notifications; real‑time feedback and delivery.</li>
+                <li>Swvl: Freshchat module automation for customer query resolution; improved response time and reduced workload.</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </section>
-
     <section class="card">
-      <div class="section-title">Selected Projects</div>
+              <div class="section-title glitch" data-text="Selected Projects">Selected Projects</div>
       <div class="grid grid-2">
-        <div class="th">Realtime Notes</div>
-        <div class="td filled">CRDT-based notes app with offline-first sync; 99.99% durability.</div>
-        <div class="th">Image Diffusion UI</div>
-        <div class="td filled">GPU job queue + streaming previews; reduced cost 30%.</div>
-        <div class="th">Data Contracts</div>
-        <div class="td filled">Schema validation in CI; eliminated 80% breaking changes.</div>
+        <div class="th">Identity Graph System</div>
+        <div class="td filled">Multi-strategy data collection for unconverted users; 30% increase in leads, 20% lift in CVR, 15% boost in RPC, generating $300K+ revenue per quarter.</div>
+        <div class="th">High-Scale Search Engine</div>
+        <div class="td filled">Elasticsearch-based system indexing 800M+ identities and 100M+ geo-locations; sub-500ms latency, 70% reduced search time, 20% lift in conversions.</div>
+        <div class="th">Intelligent Router Service</div>
+        <div class="td filled">Lambda-based re-architecture with ElastiCache, CloudWatch, and EventBridge; reduced execution time from 1500ms to under 300ms, 5% revenue increase.</div>
+        <div class="th">CSV Onboarding Tool</div>
+        <div class="td filled">AI-powered entity detection and schema mapping with 30+ automated connectors (Google, Meta, Salesforce, FreshSales); 70% reduction in manual intervention.</div>
+        <div class="th">HR Automation Platform</div>
+        <div class="td filled">Enterprise-grade solution for resume filtering, candidate tracking, interview scheduling; 70% improvement in recruitment efficiency.</div>
+        <div class="th">Employee Engagement Platform</div>
+        <div class="td filled">Peoppl digital platform with gifting system, internal e-store, and digital certificate generation for peer-to-peer recognition and rewards.</div>
       </div>
     </section>
 
     <section class="card">
-      <div class="section-title">Education & Certs</div>
+              <div class="section-title glitch" data-text="Education">Education</div>
       <div class="grid grid-2">
-        <div class="th">B.S., Computer Science</div>
-        <div class="td filled">University of Example, 2014</div>
-        <div class="th">AWS Certified</div>
-        <div class="td filled">Solutions Architect (Associate)</div>
+        <div class="th">BSCS</div>
+        <div class="td filled">COMSATS University Lahore, Islamabad — Jan 2017 – Dec 2020</div>
+        <div class="th">Location</div>
+        <div class="td filled">Lahore, Pakistan</div>
       </div>
     </section>
 
     <footer class="footer">
-      <div>Last updated: <span id="lastUpdated"></span></div>
+      <div>© <span id="currentYear">2024</span> Maaz Ashraf — Built with retro vibes ✨</div>
     </footer>
+    
   </div>
 
   <script src="script.js"></script>
