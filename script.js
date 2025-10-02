@@ -246,7 +246,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Redirect to resume after effect
       setTimeout(() => {
         window.open(
-          "https://drive.google.com/file/d/1kGxxn3QF795ZNYSfOtO86_cNhaE8_LS3/view?usp=sharing",
+          "https://drive.google.com/file/d/1WNnJtc3zQ2DW65nGeaZtxOVj4lASBAxo/view?usp=sharing",
           "_blank"
         );
       }, 300);
