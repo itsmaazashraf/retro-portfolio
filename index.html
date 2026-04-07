@@ -3,168 +3,171 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Maaz Ashraf — Software Engineer</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-     
+  <title>Maaz Ashraf - Lead Backend Engineer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
 </head>
 <body>
-  <!-- Retro Loading Screen -->
-  <div class="loading-screen">
-    <div class="loading-text">
-      LOADING SYSTEM...<br>
-      <span style="font-size: 16px; margin-top: 20px; display: block;">PRESS ANY KEY TO CONTINUE</span>
-    </div>
-  </div>
+  <a class="skip-link" href="#content">Skip to content</a>
 
-  <!-- Retro Mode Toggle -->
-  <div class="retro-mode" id="retroMode">RETRO MODE</div>
-
-  <div class="page">
-    <header class="titlebar">
-      <div class="title">Maaz Ashraf</div>
-      <div class="controls">
-        <button id="printBtn" class="btn">View Resume</button>
-      </div>
+  <main class="page" id="content">
+    <header class="hero" id="top">
+      <p class="kicker">MAAZ ASHRAF / LEAD BACKEND ENGINEER / LAHORE, PAKISTAN</p>
+      <h1>Maaz.</h1>
+      <p class="hero-tagline">Backend systems for search, routing, onboarding, and platform infrastructure.</p>
+      <p class="intro">
+        I build backend systems that improve conversion, reduce latency, and hold up under production scale. My work centers on distributed services, event-driven processing, cloud infrastructure, search, data onboarding, and the operational parts of a product that directly affect revenue and reliability.
+      </p>
+      <p class="link-row">
+        <a href="mailto:itsmaazashraf@gmail.com">email</a>
+        <span>/</span>
+        <a href="https://www.linkedin.com/in/maaz-ashraf" target="_blank" rel="noreferrer">linkedin</a>
+        <span>/</span>
+        <a href="https://github.com/itsmaazashraf" target="_blank" rel="noreferrer">github</a>
+        <span>/</span>
+        <a href="https://drive.google.com/file/d/1VfCtjjla1OJCRzOqSlPXobeRNlPxDe8W/view?usp=drive_link" target="_blank" rel="noreferrer">resume</a>
+      </p>
     </header>
 
-    <section class="card">
-      <div class="grid grid-2">
-        <div class="th">Role</div>
-        <div class="td filled">Senior Software Engineer</div>
+    <nav class="toc" aria-label="Contents">
+      <a href="#summary">summary</a>
+      <a href="#impact">impact</a>
+      <a href="#areas">areas</a>
+      <a href="#skills">skills</a>
+      <a href="#experience">experience</a>
+      <a href="#systems">systems</a>
+      <a href="#education">education</a>
+      <a href="#contact">contact</a>
+    </nav>
 
-        <div class="th">Email</div>
-        <div class="td filled"><a href="mailto:itsmaazashraf@gmail.com">itsmaazashraf@gmail.com</a></div>
-
-        <div class="th">Phone</div>
-        <div class="td filled">+92 311 5151006</div>
-
-        <div class="th">Links</div>
-        <div class="td filled">
-          <a href="https://www.linkedin.com/in/maaz-ashraf" target="_blank" rel="noreferrer">LinkedIn</a> ·
-          <a href="https://github.com/itsmaazashraf" target="_blank" rel="noreferrer">GitHub</a>
-        </div>
-      </div>
+    <section class="section" id="summary">
+      <h2>Summary</h2>
+      <p>
+        I work on the backend layers that become critical as a product grows: retrieval paths, request routing, async processing, service orchestration, schema mapping, release pipelines, and production observability. The common pattern in this work is that technical improvements have visible business effects.
+      </p>
+      <p>
+        Across recent roles, I have shipped search systems supporting 800M+ identities, delivered sub-500ms retrieval paths, rebuilt mission-critical services to cut execution time by more than 80%, and launched onboarding and enrichment systems tied directly to conversion and revenue growth.
+      </p>
+      <p>
+        My primary stack is Node.js, TypeScript, Python, SQL, AWS, and Elasticsearch, with an emphasis on reliability, throughput, fault tolerance, and systems that are legible to operate in production.
+      </p>
     </section>
 
-    <section class="card">
-              <div class="section-title glitch" data-text="Summary">Summary</div>
-      <div class="textarea like">
-        Results-driven Software Engineer with 5+ years of experience designing and deploying
-        scalable, event-driven systems across identity, data, and enterprise SaaS platforms.
-        Specialized in building high-performance APIs, distributed services, and cloud-native
-        architectures using Node.js, TypeScript, SQL, and AWS. Proficient with Lambda, SQS,
-        SNS, DynamoDB, and EC2 to ensure high availability, fault tolerance, and cost
-        efficiency. Built a high-scale identity search system for 800M+ users using
-        Elasticsearch with sub-500ms latency, and rearchitected critical backend services to
-        reduce execution time by over 90%.
-      </div>
+    <section class="section" id="impact">
+      <h2>Selected Impact</h2>
+      <ul>
+        <li>30% increase in lead submissions through profile enrichment workflows.</li>
+        <li>20% lift in conversion rate and 15% increase in RPC from backend-driven improvements.</li>
+        <li>$300K+ additional quarterly revenue tied to identity enrichment and conversion gains.</li>
+        <li>Sub-500ms search and retrieval across systems serving 800M+ identities.</li>
+        <li>Critical routing path reduced from 1500ms to under 300ms.</li>
+        <li>70% reduction in manual onboarding work through AI-assisted schema mapping.</li>
+        <li>30+ automated connectors delivered across ad, storage, and CRM platforms.</li>
+        <li>70% lower latency on large-scale people and geo-location search workloads.</li>
+        <li>50%+ faster MongoDB aggregation performance on large user and transaction datasets.</li>
+        <li>25% increase in automated backend test coverage and 60%+ reduction in manual deployment effort.</li>
+      </ul>
     </section>
 
-    <section class="card">
-              <div class="section-title glitch" data-text="Core Skills">Core Skills</div>
-      <div class="grid grid-2">
-        <div class="th">Languages</div>
-        <div class="td filled">JavaScript, TypeScript, Python, SQL, Bash</div>
-        <div class="th">Frameworks</div>
-        <div class="td filled">Node.js, Nest.js, Express.js, Next.js, React.js</div>
-        <div class="th">APIs</div>
-        <div class="td filled">GraphQL, RESTful APIs</div>
-        <div class="th">Databases</div>
-        <div class="td filled">MongoDB, MySQL, PostgreSQL, DynamoDB</div>
-        <div class="th">Version Control</div>
-        <div class="td filled">Git, GitHub, GitLab, BitBucket</div>
-        <div class="th">Cloud & DevOps</div>
-        <div class="td filled">AWS (API Gateway, Lambda, S3, Cognito, EC2, SQS, EventBridge, CloudFormation, Athena, Step Functions), GCP, Docker, Kubernetes, Nginx, GitHub Actions, IaC</div>
-      </div>
+    <section class="section" id="areas">
+      <h2>Areas</h2>
+      <ul>
+        <li><strong>Search and retrieval:</strong> Elasticsearch-backed systems, indexing strategies, response-time reduction, and query paths where speed affects product usage and revenue.</li>
+        <li><strong>Routing and orchestration:</strong> Event-driven services, queue-backed processing, request routing, and service coordination designed around latency budgets and reliability.</li>
+        <li><strong>Data onboarding:</strong> Structured data ingestion, CSV onboarding, schema mapping, and connector-based imports that reduce manual handling.</li>
+        <li><strong>Platform engineering:</strong> Cloud-native backend services, infrastructure automation, CI/CD, monitoring, rollback safety, and production visibility.</li>
+        <li><strong>Enterprise automation:</strong> Hiring, scheduling, attendance, support, and internal workflow systems where software replaces repeated operational coordination.</li>
+      </ul>
     </section>
 
-    <section class="card">
-              <div class="section-title glitch" data-text="Experience">Experience</div>
-      <div class="table like">
-        <div class="row">
-          <div class="cell left">Sep 2023 – Present</div>
-          <div class="cell right">
-            <div class="job-title">Lead Backend Engineer — Revcloud / Alyson.ai</div>
-            <div class="job-notes">
-              <ul>
-                <li>Identity-graph system to detect/enrich unconverted users; +30% leads, +20% CVR, +15% RPC, +$300K/quarter.</li>
-                <li>High-scale identity platform (800M+ identities) with Elasticsearch search delivering sub‑500ms results; +20% revenue.</li>
-                <li>Re‑architected intelligent router with AWS (Lambda, ElastiCache, CloudWatch, EventBridge); 1500ms → &lt;300ms.</li>
-                <li>CSV onboarding with AI entity detection and 30+ connectors (Google, Meta, Salesforce, FreshSales); 70% manual reduction.</li>
-                <li>Search engine indexing 80M+ people and 100M+ locations; −70% latency, &lt;500ms responses, +20% conversions.</li>
-                <li>Dataset management over S3 with Athena Express for low‑latency querying; CI/CD and IaC via GitHub Actions & CloudFormation.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="cell left">Jul 2022 – Aug 2023</div>
-          <div class="cell right">
-            <div class="job-title">Senior Software Engineer — Nextbridge Pvt Ltd</div>
-            <div class="job-notes">
-              <ul>
-                <li>Built enterprise HR automation platform; 70% improvement in recruitment efficiency.</li>
-                <li>Calendly‑style scheduling tool; removed third‑party dependency.</li>
-                <li>Attendance automation bot for hybrid/remote teams.</li>
-                <li>Modular NestJS/Node.js backend for multi‑portal SaaS; integrated Twilio, SendGrid, Stripe, HubSpot, Webflow.</li>
-                <li>Optimized MongoDB aggregates; &gt;50% faster queries. Increased test coverage +25% with Jest/SuperTest.</li>
-                <li>Managed AWS (EC2, S3, Lambda, CloudWatch) and automated CI/CD with GitHub Actions; −60% manual deploy effort.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="cell left">Jan 2021 – Jul 2022</div>
-          <div class="cell right">
-            <div class="job-title">Backend Engineer — TDC (The Dev Corporate)</div>
-            <div class="job-notes">
-              <ul>
-                <li>Peoppl: employee engagement platform — gifting system, internal e‑store, certificate generation.</li>
-                <li>Transactional workflows for reward redemption, inventory, notifications; real‑time feedback and delivery.</li>
-                <li>Swvl: Freshchat module automation for customer query resolution; improved response time and reduced workload.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="card">
-              <div class="section-title glitch" data-text="Selected Projects">Selected Projects</div>
-      <div class="grid grid-2">
-        <div class="th">Identity Graph System</div>
-        <div class="td filled">Multi-strategy data collection for unconverted users; 30% increase in leads, 20% lift in CVR, 15% boost in RPC, generating $300K+ revenue per quarter.</div>
-        <div class="th">High-Scale Search Engine</div>
-        <div class="td filled">Elasticsearch-based system indexing 800M+ identities and 100M+ geo-locations; sub-500ms latency, 70% reduced search time, 20% lift in conversions.</div>
-        <div class="th">Intelligent Router Service</div>
-        <div class="td filled">Lambda-based re-architecture with ElastiCache, CloudWatch, and EventBridge; reduced execution time from 1500ms to under 300ms, 5% revenue increase.</div>
-        <div class="th">CSV Onboarding Tool</div>
-        <div class="td filled">AI-powered entity detection and schema mapping with 30+ automated connectors (Google, Meta, Salesforce, FreshSales); 70% reduction in manual intervention.</div>
-        <div class="th">HR Automation Platform</div>
-        <div class="td filled">Enterprise-grade solution for resume filtering, candidate tracking, interview scheduling; 70% improvement in recruitment efficiency.</div>
-        <div class="th">Employee Engagement Platform</div>
-        <div class="td filled">Peoppl digital platform with gifting system, internal e-store, and digital certificate generation for peer-to-peer recognition and rewards.</div>
-      </div>
+    <section class="section" id="skills">
+      <h2>Skills</h2>
+      <p><strong>Languages:</strong> JavaScript, TypeScript, Python, SQL, Bash</p>
+      <p><strong>Backend:</strong> Node.js, NestJS, Express.js, REST APIs, GraphQL, microservices, distributed systems, event-driven architecture, async processing</p>
+      <p><strong>Cloud:</strong> AWS API Gateway, Lambda, S3, EC2, SQS, SNS, EventBridge, CloudWatch, DynamoDB, Athena, Step Functions, CloudFormation, CI/CD</p>
+      <p><strong>Data:</strong> PostgreSQL, MySQL, MongoDB, DynamoDB, Elasticsearch, data pipelines, scalable search</p>
+      <p><strong>Delivery:</strong> Docker, Kubernetes, Nginx, GitHub Actions, Git, GitHub, GitLab, monitoring, logging, alerting</p>
     </section>
 
-    <section class="card">
-              <div class="section-title glitch" data-text="Education">Education</div>
-      <div class="grid grid-2">
-        <div class="th">BSCS</div>
-        <div class="td filled">COMSATS University Lahore, Islamabad — Jan 2017 – Dec 2020</div>
-        <div class="th">Location</div>
-        <div class="td filled">Lahore, Pakistan</div>
-      </div>
+    <section class="section" id="experience">
+      <h2>Experience</h2>
+
+      <article class="entry">
+        <h3>Revcloud / Alyson.ai</h3>
+        <p class="meta">Lead Backend Engineer / Sep 2023 - Present</p>
+        <ul>
+          <li>Designed and launched a profile enrichment system on top of the company identity graph, driving 30% more lead submissions, 20% lift in CVR, 15% boost in RPC, and $300K+ in additional quarterly revenue.</li>
+          <li>Owned search architecture for a platform managing 800M+ identities with Elasticsearch-based retrieval and sub-500ms response times.</li>
+          <li>Rearchitected a mission-critical intelligent router using Lambda, ElastiCache, CloudWatch, and EventBridge, reducing execution time from 1500ms to under 300ms.</li>
+          <li>Led an AI-powered CSV onboarding and schema-mapping platform with 30+ automated connectors across Google Ads, Google Drive, Meta, Salesforce, and FreshSales.</li>
+          <li>Built scalable backend services and event-driven microservices using Node.js, TypeScript, Python, SQS, SNS, and AWS to improve resilience and async throughput across critical platform workflows.</li>
+          <li>Built a large-scale search engine indexing 80M+ people and 100M+ geo-locations, reducing search latency by 70% and contributing to a 20% lift in conversions.</li>
+          <li>Defined CI/CD pipelines and infrastructure automation with CloudFormation and GitHub Actions to improve release reliability and rollback safety.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <h3>Nextbridge Pvt Ltd</h3>
+        <p class="meta">Senior Software Engineer / Jul 2022 - Aug 2023</p>
+        <ul>
+          <li>Led end-to-end backend development for an enterprise HR automation platform covering resume filtering, candidate tracking, interview scheduling, and internal coordination.</li>
+          <li>Built a Calendly-style scheduling system and an attendance automation bot to reduce operational friction for hybrid and remote teams.</li>
+          <li>Designed modular backend APIs and service workflows using Node.js and NestJS for a multi-portal SaaS platform.</li>
+          <li>Integrated Twilio, SendGrid, Stripe, HubSpot, and Webflow to support automated business workflows.</li>
+          <li>Improved MongoDB aggregation pipeline performance by more than 50% and increased automated test coverage by 25% using Jest and SuperTest.</li>
+          <li>Supported AWS-based deployments across EC2, S3, Lambda, and CloudWatch while automating CI/CD pipelines with GitHub Actions.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <h3>TDC (The Dev Corporate)</h3>
+        <p class="meta">Software Engineer / Jan 2021 - Jul 2022</p>
+        <ul>
+          <li>Built backend services for Peoppl, a digital employee engagement platform focused on recognition, rewards, and redemption flows.</li>
+          <li>Designed core modules for gifting, internal e-store flows, digital certificate generation, inventory handling, and notification delivery.</li>
+          <li>Implemented transactional workflows for reward redemption and real-time user interactions across distributed product flows.</li>
+          <li>Built chatbot and real-time communication services for the Swvl platform to improve support efficiency and workflow automation.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section" id="systems">
+      <h2>Selected Systems</h2>
+      <ul>
+        <li><strong>Profile enrichment system:</strong> identity-graph workflow to detect unconverted users and enrich profiles, tied directly to leads, CVR, RPC, and revenue.</li>
+        <li><strong>800M+ identity search:</strong> Elasticsearch-powered retrieval architecture delivering sub-500ms responses across very large identity datasets.</li>
+        <li><strong>Intelligent router service:</strong> Lambda- and EventBridge-backed routing layer redesigned for faster, more reliable request orchestration.</li>
+        <li><strong>AI CSV onboarding platform:</strong> schema-mapping and ingestion workflow with 30+ automated connectors across ad, storage, and CRM systems.</li>
+        <li><strong>People and geo-location search:</strong> large-scale indexing across 80M+ people and 100M+ geo-locations with a 70% latency reduction.</li>
+        <li><strong>Athena-backed data access layer:</strong> low-latency querying and dynamic dataset generation over structured S3 data for product and reporting workflows.</li>
+        <li><strong>Enterprise HR automation platform:</strong> backend systems for filtering, candidate tracking, scheduling, and coordination in a custom enterprise environment.</li>
+      </ul>
+    </section>
+
+    <section class="section" id="education">
+      <h2>Education</h2>
+      <p>COMSATS University Islamabad, Lahore Campus</p>
+      <p>Bachelor of Science in Computer Science</p>
+      <p>Jan 2017 - Dec 2020</p>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:itsmaazashraf@gmail.com">itsmaazashraf@gmail.com</a></p>
+      <p>Phone: <a href="tel:+923115151006">+92 311 5151006</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/maaz-ashraf" target="_blank" rel="noreferrer">linkedin.com/in/maaz-ashraf</a></p>
+      <p>GitHub: <a href="https://github.com/itsmaazashraf" target="_blank" rel="noreferrer">github.com/itsmaazashraf</a></p>
+      <p>Resume: <a href="https://drive.google.com/file/d/1VfCtjjla1OJCRzOqSlPXobeRNlPxDe8W/view?usp=drive_link" target="_blank" rel="noreferrer">PDF</a></p>
     </section>
 
     <footer class="footer">
-      <div>© <span id="currentYear">2024</span> Maaz Ashraf — Built with retro vibes ✨</div>
+      <p>Last updated <span id="currentYear">2026</span>.</p>
+      <p><a href="#top">back to top</a></p>
     </footer>
-    
-  </div>
+  </main>
 
   <script src="script.js"></script>
 </body>
