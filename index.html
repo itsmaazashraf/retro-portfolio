@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Maaz Ashraf - Lead Backend Engineer</title>
+  <title>Maaz Ashraf / Lead Backend Engineer</title>
+  <meta name="description" content="Maaz Ashraf, Lead Backend Engineer. Search over 800M+ identities, a request router rebuilt from 1500ms to under 300ms, and the design notes behind them.">
   <link rel="stylesheet" href="styles.css">
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -14,158 +15,263 @@
   <a class="skip-link" href="#content">Skip to content</a>
 
   <main class="page" id="content">
-    <header class="hero" id="top">
-      <p class="kicker">MAAZ ASHRAF / LEAD BACKEND ENGINEER / LAHORE, PAKISTAN</p>
-      <h1>Maaz.</h1>
-      <p class="hero-tagline">Backend systems for search, routing, onboarding, and platform infrastructure.</p>
-      <p class="intro">
-        I build backend systems that improve conversion, reduce latency, and hold up under production scale. My work centers on distributed services, event-driven processing, cloud infrastructure, search, data onboarding, and the operational parts of a product that directly affect revenue and reliability.
-      </p>
-      <p class="link-row">
+    <header class="top" id="top">
+      <p class="crumb"><span class="dot" aria-hidden="true"></span>maaz.career <span class="dim">/ status</span> <span class="accent">running</span></p>
+      <h1>Maaz Ashraf</h1>
+      <p class="role">Lead Backend Engineer. Search, routing, onboarding, platform infrastructure.</p>
+
+      <div class="bio">
+        <div class="bio-tabs" role="tablist" aria-label="Biography">
+          <button type="button" role="tab" id="tab-promo" aria-controls="bio-promo" aria-selected="true">promotional bio</button>
+          <button type="button" role="tab" id="tab-real" aria-controls="bio-real" aria-selected="false" tabindex="-1">real bio</button>
+        </div>
+        <p class="bio-panel" id="bio-promo" role="tabpanel" aria-labelledby="tab-promo">
+          Lead Backend Engineer at Revcloud / Alyson.ai. Owns search over 800M+ identities, rebuilt the request router from 1500ms to under 300ms, and shipped enrichment work tied to $300K+ in additional quarterly revenue. Works mostly in Node.js, TypeScript, Python, AWS and Elasticsearch.
+        </p>
+        <p class="bio-panel" id="bio-real" role="tabpanel" aria-labelledby="tab-real" hidden>
+          I like the part of a product nobody sees until it gets slow. Most of my work is making a request go somewhere, find something, and come back before anyone notices it left.
+        </p>
+      </div>
+
+      <ul class="headline" aria-label="Headline numbers">
+        <li><a href="#MA-007"><b>800M+</b> identities, &lt;500ms search</a></li>
+        <li><a href="#MA-008"><b>1500 &rarr; &lt;300ms</b> request router</a></li>
+        <li><a href="#MA-006"><b>+30%</b> lead submissions</a></li>
+        <li><a href="#MA-006"><b>$300K+</b> extra revenue per quarter</a></li>
+      </ul>
+
+      <nav class="links" aria-label="Contact">
         <a href="mailto:itsmaazashraf@gmail.com">email</a>
-        <span>/</span>
         <a href="https://www.linkedin.com/in/maaz-ashraf" target="_blank" rel="noreferrer">linkedin</a>
-        <span>/</span>
         <a href="https://github.com/itsmaazashraf" target="_blank" rel="noreferrer">github</a>
-        <span>/</span>
-        <a href="https://drive.google.com/file/d/1VfCtjjla1OJCRzOqSlPXobeRNlPxDe8W/view?usp=drive_link" target="_blank" rel="noreferrer">resume</a>
+        <a href="https://drive.google.com/file/d/1VfCtjjla1OJCRzOqSlPXobeRNlPxDe8W/view?usp=drive_link" target="_blank" rel="noreferrer">resume.pdf</a>
+      </nav>
+
+      <p class="start">
+        <span class="dim">start here &rarr;</span>
+        hiring? the <a href="#trace">trace</a> and the <a href="https://drive.google.com/file/d/1VfCtjjla1OJCRzOqSlPXobeRNlPxDe8W/view?usp=drive_link" target="_blank" rel="noreferrer">resume</a>.
+        engineer? the <a href="#notes">design notes</a>.
+        just curious? <a href="#race">fire a request</a>.
       </p>
     </header>
 
-    <nav class="toc" aria-label="Contents">
-      <a href="#summary">summary</a>
-      <a href="#impact">impact</a>
-      <a href="#areas">areas</a>
-      <a href="#skills">skills</a>
-      <a href="#experience">experience</a>
-      <a href="#systems">systems</a>
-      <a href="#education">education</a>
-      <a href="#contact">contact</a>
-    </nav>
-
-    <section class="section" id="summary">
-      <h2>Summary</h2>
-      <p>
-        I work on the backend layers that become critical as a product grows: retrieval paths, request routing, async processing, service orchestration, schema mapping, release pipelines, and production observability. The common pattern in this work is that technical improvements have visible business effects.
-      </p>
-      <p>
-        Across recent roles, I have shipped search systems supporting 800M+ identities, delivered sub-500ms retrieval paths, rebuilt mission-critical services to cut execution time by more than 80%, and launched onboarding and enrichment systems tied directly to conversion and revenue growth.
-      </p>
-      <p>
-        My primary stack is Node.js, TypeScript, Python, SQL, AWS, and Elasticsearch, with an emphasis on reliability, throughput, fault tolerance, and systems that are legible to operate in production.
-      </p>
+    <section class="section" id="trace" aria-labelledby="trace-h">
+      <h2 id="trace-h"><span class="num">01</span> <b>trace</b> <span class="dim">the whole career as one request</span></h2>
+      <div class="trace">
+        <div class="waterfall" id="waterfall">
+          <div class="axis">
+            <div class="axis-label">span</div>
+            <div class="ticks" id="ticks"></div>
+          </div>
+          <div class="rows" id="rows" role="tree" aria-label="Career trace"></div>
+          <p class="hint">click a span &middot; <kbd>&uarr;</kbd> <kbd>&darr;</kbd> move &middot; <kbd>&larr;</kbd> <kbd>&rarr;</kbd> collapse / expand</p>
+        </div>
+        <aside class="detail" id="detail" aria-live="polite"></aside>
+      </div>
+      <noscript><p class="dim">The trace needs JavaScript. Everything in it is also in the design notes below.</p></noscript>
     </section>
 
-    <section class="section" id="impact">
-      <h2>Selected Impact</h2>
-      <ul>
-        <li>30% increase in lead submissions through profile enrichment workflows.</li>
-        <li>20% lift in conversion rate and 15% increase in RPC from backend-driven improvements.</li>
-        <li>$300K+ additional quarterly revenue tied to identity enrichment and conversion gains.</li>
-        <li>Sub-500ms search and retrieval across systems serving 800M+ identities.</li>
-        <li>Critical routing path reduced from 1500ms to under 300ms.</li>
-        <li>70% reduction in manual onboarding work through AI-assisted schema mapping.</li>
-        <li>30+ automated connectors delivered across ad, storage, and CRM platforms.</li>
-        <li>70% lower latency on large-scale people and geo-location search workloads.</li>
-        <li>50%+ faster MongoDB aggregation performance on large user and transaction datasets.</li>
-        <li>25% increase in automated backend test coverage and 60%+ reduction in manual deployment effort.</li>
+    <section class="section" id="race" aria-labelledby="race-h">
+      <h2 id="race-h"><span class="num">02</span> <b>fire a request</b> <span class="dim">the router, before and after</span></h2>
+      <p class="lede">The intelligent router sits on the hot path of every request. I rebuilt it on Lambda, ElastiCache, EventBridge and CloudWatch. Send it some traffic and watch both versions at real speed.</p>
+
+      <div class="race" id="raceBox">
+        <div class="controls">
+          <button type="button" id="fire1">fire 1 request</button>
+          <button type="button" id="fire20">fire 20</button>
+          <button type="button" id="raceReset" class="ghost">reset</button>
+        </div>
+
+        <div class="lanes">
+          <div class="lane" data-lane="v1">
+            <div class="lane-label">v1 <span class="dim">before</span></div>
+            <div class="lane-track"><div class="lane-ink"></div></div>
+            <div class="lane-stats" aria-live="off">n 0</div>
+          </div>
+          <div class="lane" data-lane="v2">
+            <div class="lane-label">v2 <span class="dim">after</span></div>
+            <div class="lane-track"><div class="lane-ink"></div></div>
+            <div class="lane-stats" aria-live="off">n 0</div>
+          </div>
+          <div class="lane lane-axis" aria-hidden="true">
+            <div></div>
+            <div class="ms-axis" id="msAxis"></div>
+            <div></div>
+          </div>
+        </div>
+
+        <p class="verdict" id="verdict" aria-live="polite">Nothing fired yet.</p>
+      </div>
+      <p class="fine">Simulated. Each latency is sampled around the measured numbers (about 1500ms before, under 300ms after) and played back in real time. More in <a href="#MA-008">MA-008</a>.</p>
+    </section>
+
+    <section class="section" id="notes" aria-labelledby="notes-h">
+      <h2 id="notes-h"><span class="num">03</span> <b>design notes</b> <span class="dim">numbered in the order they happened</span></h2>
+      <p class="lede">One note per system, newest first. Dates inside a role are approximate.</p>
+
+      <ol class="notes" reversed>
+        <li id="MA-012">
+          <details>
+            <summary><span class="id">MA-012</span><span class="date">2023&ndash;now</span><span class="t">Release pipelines you can roll back</span><span class="res"></span></summary>
+            <dl class="note-body">
+              <dt>where</dt><dd>Revcloud / Alyson.ai</dd>
+              <dt>built</dt><dd>CI/CD pipelines and infrastructure automation with CloudFormation and GitHub Actions.</dd>
+              <dt>result</dt><dd>More reliable releases and safer rollbacks.</dd>
+              <dt>stack</dt><dd>CloudFormation, GitHub Actions, AWS</dd>
+            </dl>
+          </details>
+        </li>
+        <li id="MA-011">
+          <details>
+            <summary><span class="id">MA-011</span><span class="date">2025</span><span class="t">An Athena-backed data access layer</span><span class="res"></span></summary>
+            <dl class="note-body">
+              <dt>where</dt><dd>Revcloud / Alyson.ai</dd>
+              <dt>built</dt><dd>Low-latency querying and dynamic dataset generation over structured data in S3.</dd>
+              <dt>used by</dt><dd>Product and reporting workflows.</dd>
+              <dt>stack</dt><dd>Athena, S3</dd>
+            </dl>
+          </details>
+        </li>
+        <li id="MA-010">
+          <details>
+            <summary><span class="id">MA-010</span><span class="date">2025</span><span class="t">People and geo-location search</span><span class="res">&minus;70% latency</span></summary>
+            <dl class="note-body">
+              <dt>where</dt><dd>Revcloud / Alyson.ai</dd>
+              <dt>built</dt><dd>A large-scale search engine indexing 80M+ people and 100M+ geo-locations.</dd>
+              <dt>result</dt><dd>Search latency down 70%. Contributed to a 20% lift in conversions.</dd>
+              <dt>stack</dt><dd>Elasticsearch</dd>
+            </dl>
+          </details>
+        </li>
+        <li id="MA-009">
+          <details>
+            <summary><span class="id">MA-009</span><span class="date">2024&ndash;25</span><span class="t">AI-assisted CSV onboarding and schema mapping</span><span class="res">30+ connectors</span></summary>
+            <dl class="note-body">
+              <dt>where</dt><dd>Revcloud / Alyson.ai</dd>
+              <dt>built</dt><dd>Led the platform: CSV ingestion, AI-assisted schema mapping, and automated connectors across Google Ads, Google Drive, Meta, Salesforce and FreshSales.</dd>
+              <dt>result</dt><dd>30+ connectors shipped. Manual onboarding work down 70%.</dd>
+            </dl>
+          </details>
+        </li>
+        <li id="MA-008">
+          <details>
+            <summary><span class="id">MA-008</span><span class="date">2024</span><span class="t">Rebuilding the intelligent router</span><span class="res">1500 &rarr; &lt;300ms</span></summary>
+            <dl class="note-body">
+              <dt>where</dt><dd>Revcloud / Alyson.ai</dd>
+              <dt>problem</dt><dd>A mission-critical router on the request path took around 1500ms to execute.</dd>
+              <dt>built</dt><dd>Rearchitected it on Lambda, ElastiCache, EventBridge and CloudWatch.</dd>
+              <dt>result</dt><dd>Execution time under 300ms, an 80%+ cut. Race both versions in <a href="#race">02</a>.</dd>
+              <dt>stack</dt><dd>Lambda, ElastiCache, EventBridge, CloudWatch</dd>
+            </dl>
+          </details>
+        </li>
+        <li id="MA-007">
+          <details>
+            <summary><span class="id">MA-007</span><span class="date">2023&ndash;25</span><span class="t">Search across 800M+ identities</span><span class="res">&lt;500ms</span></summary>
+            <dl class="note-body">
+              <dt>where</dt><dd>Revcloud / Alyson.ai</dd>
+              <dt>built</dt><dd>Owned the search architecture for a platform managing 800M+ identities, with Elasticsearch-based retrieval.</dd>
+              <dt>result</dt><dd>Sub-500ms responses at that scale.</dd>
+              <dt>stack</dt><dd>Elasticsearch, Node.js, AWS</dd>
+            </dl>
+          </details>
+        </li>
+        <li id="MA-006">
+          <details>
+            <summary><span class="id">MA-006</span><span class="date">2023&ndash;24</span><span class="t">Profile enrichment on the identity graph</span><span class="res">+$300K / quarter</span></summary>
+            <dl class="note-body">
+              <dt>where</dt><dd>Revcloud / Alyson.ai</dd>
+              <dt>built</dt><dd>A system on top of the company identity graph that detects unconverted users and enriches their profiles.</dd>
+              <dt>result</dt><dd>+30% lead submissions, +20% conversion rate, +15% revenue per click, and $300K+ in additional quarterly revenue.</dd>
+            </dl>
+          </details>
+        </li>
+        <li id="MA-005">
+          <details>
+            <summary><span class="id">MA-005</span><span class="date">2023</span><span class="t">MongoDB aggregation tuning</span><span class="res">50%+ faster</span></summary>
+            <dl class="note-body">
+              <dt>where</dt><dd>Nextbridge</dd>
+              <dt>built</dt><dd>Reworked aggregation pipelines over large user and transaction datasets, and raised automated test coverage with Jest and SuperTest.</dd>
+              <dt>result</dt><dd>Aggregations more than 50% faster. Test coverage up 25%.</dd>
+              <dt>stack</dt><dd>MongoDB, Jest, SuperTest</dd>
+            </dl>
+          </details>
+        </li>
+        <li id="MA-004">
+          <details>
+            <summary><span class="id">MA-004</span><span class="date">2022&ndash;23</span><span class="t">A scheduling engine and an attendance bot</span><span class="res"></span></summary>
+            <dl class="note-body">
+              <dt>where</dt><dd>Nextbridge</dd>
+              <dt>built</dt><dd>A Calendly-style scheduling system and an attendance automation bot.</dd>
+              <dt>result</dt><dd>Less operational friction for hybrid and remote teams.</dd>
+            </dl>
+          </details>
+        </li>
+        <li id="MA-003">
+          <details>
+            <summary><span class="id">MA-003</span><span class="date">2022&ndash;23</span><span class="t">An enterprise HR automation platform</span><span class="res"></span></summary>
+            <dl class="note-body">
+              <dt>where</dt><dd>Nextbridge</dd>
+              <dt>built</dt><dd>Led the backend end to end: resume filtering, candidate tracking, interview scheduling and internal coordination. Modular APIs and service workflows for a multi-portal SaaS, integrated with Twilio, SendGrid, Stripe, HubSpot and Webflow.</dd>
+              <dt>shipped on</dt><dd>AWS (EC2, S3, Lambda, CloudWatch), with CI/CD automated in GitHub Actions.</dd>
+              <dt>stack</dt><dd>Node.js, NestJS, MongoDB, AWS</dd>
+            </dl>
+          </details>
+        </li>
+        <li id="MA-002">
+          <details>
+            <summary><span class="id">MA-002</span><span class="date">2021&ndash;22</span><span class="t">Real-time chat and a support bot for Swvl</span><span class="res"></span></summary>
+            <dl class="note-body">
+              <dt>where</dt><dd>TDC (The Dev Corporate)</dd>
+              <dt>built</dt><dd>Chatbot and real-time communication services for the Swvl platform.</dd>
+              <dt>result</dt><dd>Faster support and more automated workflows.</dd>
+            </dl>
+          </details>
+        </li>
+        <li id="MA-001">
+          <details>
+            <summary><span class="id">MA-001</span><span class="date">2021&ndash;22</span><span class="t">Rewards and redemption for Peoppl</span><span class="res"></span></summary>
+            <dl class="note-body">
+              <dt>where</dt><dd>TDC (The Dev Corporate)</dd>
+              <dt>built</dt><dd>Core modules for an employee engagement platform: gifting, an internal e-store, digital certificates, inventory and notifications, plus transactional workflows for reward redemption.</dd>
+            </dl>
+          </details>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section" id="facts" aria-labelledby="facts-h">
+      <h2 id="facts-h"><span class="num">04</span> <b>facts</b> <span class="dim">some of these are true</span></h2>
+      <ul class="facts">
+        <li>His p99 is other people's p50.</li>
+        <li>Believes every slow endpoint has a cache it hasn't met yet.</li>
+        <li>Has never met a CSV whose headers he couldn't map. Has met several he wishes he hadn't.</li>
+        <li>Once cut a router's execution time by 80%. Has been insufferable about it ever since (see <a href="#race">02</a>).</li>
+        <li>Reads CloudWatch dashboards for fun.</li>
       </ul>
     </section>
 
-    <section class="section" id="areas">
-      <h2>Areas</h2>
-      <ul>
-        <li><strong>Search and retrieval:</strong> Elasticsearch-backed systems, indexing strategies, response-time reduction, and query paths where speed affects product usage and revenue.</li>
-        <li><strong>Routing and orchestration:</strong> Event-driven services, queue-backed processing, request routing, and service coordination designed around latency budgets and reliability.</li>
-        <li><strong>Data onboarding:</strong> Structured data ingestion, CSV onboarding, schema mapping, and connector-based imports that reduce manual handling.</li>
-        <li><strong>Platform engineering:</strong> Cloud-native backend services, infrastructure automation, CI/CD, monitoring, rollback safety, and production visibility.</li>
-        <li><strong>Enterprise automation:</strong> Hiring, scheduling, attendance, support, and internal workflow systems where software replaces repeated operational coordination.</li>
-      </ul>
+    <section class="section" id="errata" aria-labelledby="errata-h">
+      <h2 id="errata-h"><span class="num">05</span> <b>errata</b> <span class="dim">after Knuth</span></h2>
+      <p>If you find a real technical error in any design note, <a href="mailto:itsmaazashraf@gmail.com?subject=Errata">email me</a>. The first person to report each one gets a coffee on me, and their name goes here.</p>
+      <p class="dim">found so far: 0</p>
     </section>
 
-    <section class="section" id="skills">
-      <h2>Skills</h2>
-      <p><strong>Languages:</strong> JavaScript, TypeScript, Python, SQL, Bash</p>
-      <p><strong>Backend:</strong> Node.js, NestJS, Express.js, REST APIs, GraphQL, microservices, distributed systems, event-driven architecture, async processing</p>
-      <p><strong>Cloud:</strong> AWS API Gateway, Lambda, S3, EC2, SQS, SNS, EventBridge, CloudWatch, DynamoDB, Athena, Step Functions, CloudFormation, CI/CD</p>
-      <p><strong>Data:</strong> PostgreSQL, MySQL, MongoDB, DynamoDB, Elasticsearch, data pipelines, scalable search</p>
-      <p><strong>Delivery:</strong> Docker, Kubernetes, Nginx, GitHub Actions, Git, GitHub, GitLab, monitoring, logging, alerting</p>
+    <section class="section" id="contact" aria-labelledby="contact-h">
+      <h2 id="contact-h"><span class="num">06</span> <b>standing invitation</b></h2>
+      <p>I'm always glad to talk about search at scale, latency budgets, event-driven systems on AWS, and getting messy data into clean schemas.</p>
+      <p>Email is best. Tell me what you're building and what's slow.</p>
+      <dl class="contact">
+        <dt>email</dt><dd><a href="mailto:itsmaazashraf@gmail.com">itsmaazashraf@gmail.com</a></dd>
+        <dt>linkedin</dt><dd><a href="https://www.linkedin.com/in/maaz-ashraf" target="_blank" rel="noreferrer">linkedin.com/in/maaz-ashraf</a></dd>
+        <dt>github</dt><dd><a href="https://github.com/itsmaazashraf" target="_blank" rel="noreferrer">github.com/itsmaazashraf</a></dd>
+        <dt>resume</dt><dd><a href="https://drive.google.com/file/d/1VfCtjjla1OJCRzOqSlPXobeRNlPxDe8W/view?usp=drive_link" target="_blank" rel="noreferrer">PDF</a></dd>
+      </dl>
     </section>
 
-    <section class="section" id="experience">
-      <h2>Experience</h2>
-
-      <article class="entry">
-        <h3>Revcloud / Alyson.ai</h3>
-        <p class="meta">Lead Backend Engineer / Sep 2023 - Present</p>
-        <ul>
-          <li>Designed and launched a profile enrichment system on top of the company identity graph, driving 30% more lead submissions, 20% lift in CVR, 15% boost in RPC, and $300K+ in additional quarterly revenue.</li>
-          <li>Owned search architecture for a platform managing 800M+ identities with Elasticsearch-based retrieval and sub-500ms response times.</li>
-          <li>Rearchitected a mission-critical intelligent router using Lambda, ElastiCache, CloudWatch, and EventBridge, reducing execution time from 1500ms to under 300ms.</li>
-          <li>Led an AI-powered CSV onboarding and schema-mapping platform with 30+ automated connectors across Google Ads, Google Drive, Meta, Salesforce, and FreshSales.</li>
-          <li>Built scalable backend services and event-driven microservices using Node.js, TypeScript, Python, SQS, SNS, and AWS to improve resilience and async throughput across critical platform workflows.</li>
-          <li>Built a large-scale search engine indexing 80M+ people and 100M+ geo-locations, reducing search latency by 70% and contributing to a 20% lift in conversions.</li>
-          <li>Defined CI/CD pipelines and infrastructure automation with CloudFormation and GitHub Actions to improve release reliability and rollback safety.</li>
-        </ul>
-      </article>
-
-      <article class="entry">
-        <h3>Nextbridge Pvt Ltd</h3>
-        <p class="meta">Senior Software Engineer / Jul 2022 - Aug 2023</p>
-        <ul>
-          <li>Led end-to-end backend development for an enterprise HR automation platform covering resume filtering, candidate tracking, interview scheduling, and internal coordination.</li>
-          <li>Built a Calendly-style scheduling system and an attendance automation bot to reduce operational friction for hybrid and remote teams.</li>
-          <li>Designed modular backend APIs and service workflows using Node.js and NestJS for a multi-portal SaaS platform.</li>
-          <li>Integrated Twilio, SendGrid, Stripe, HubSpot, and Webflow to support automated business workflows.</li>
-          <li>Improved MongoDB aggregation pipeline performance by more than 50% and increased automated test coverage by 25% using Jest and SuperTest.</li>
-          <li>Supported AWS-based deployments across EC2, S3, Lambda, and CloudWatch while automating CI/CD pipelines with GitHub Actions.</li>
-        </ul>
-      </article>
-
-      <article class="entry">
-        <h3>TDC (The Dev Corporate)</h3>
-        <p class="meta">Software Engineer / Jan 2021 - Jul 2022</p>
-        <ul>
-          <li>Built backend services for Peoppl, a digital employee engagement platform focused on recognition, rewards, and redemption flows.</li>
-          <li>Designed core modules for gifting, internal e-store flows, digital certificate generation, inventory handling, and notification delivery.</li>
-          <li>Implemented transactional workflows for reward redemption and real-time user interactions across distributed product flows.</li>
-          <li>Built chatbot and real-time communication services for the Swvl platform to improve support efficiency and workflow automation.</li>
-        </ul>
-      </article>
-    </section>
-
-    <section class="section" id="systems">
-      <h2>Selected Systems</h2>
-      <ul>
-        <li><strong>Profile enrichment system:</strong> identity-graph workflow to detect unconverted users and enrich profiles, tied directly to leads, CVR, RPC, and revenue.</li>
-        <li><strong>800M+ identity search:</strong> Elasticsearch-powered retrieval architecture delivering sub-500ms responses across very large identity datasets.</li>
-        <li><strong>Intelligent router service:</strong> Lambda- and EventBridge-backed routing layer redesigned for faster, more reliable request orchestration.</li>
-        <li><strong>AI CSV onboarding platform:</strong> schema-mapping and ingestion workflow with 30+ automated connectors across ad, storage, and CRM systems.</li>
-        <li><strong>People and geo-location search:</strong> large-scale indexing across 80M+ people and 100M+ geo-locations with a 70% latency reduction.</li>
-        <li><strong>Athena-backed data access layer:</strong> low-latency querying and dynamic dataset generation over structured S3 data for product and reporting workflows.</li>
-        <li><strong>Enterprise HR automation platform:</strong> backend systems for filtering, candidate tracking, scheduling, and coordination in a custom enterprise environment.</li>
-      </ul>
-    </section>
-
-    <section class="section" id="education">
-      <h2>Education</h2>
-      <p>COMSATS University Islamabad, Lahore Campus</p>
-      <p>Bachelor of Science in Computer Science</p>
-      <p>Jan 2017 - Dec 2020</p>
-    </section>
-
-    <section class="section" id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:itsmaazashraf@gmail.com">itsmaazashraf@gmail.com</a></p>
-      <p>Phone: <a href="tel:+923115151006">+92 311 5151006</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/maaz-ashraf" target="_blank" rel="noreferrer">linkedin.com/in/maaz-ashraf</a></p>
-      <p>GitHub: <a href="https://github.com/itsmaazashraf" target="_blank" rel="noreferrer">github.com/itsmaazashraf</a></p>
-      <p>Resume: <a href="https://drive.google.com/file/d/1VfCtjjla1OJCRzOqSlPXobeRNlPxDe8W/view?usp=drive_link" target="_blank" rel="noreferrer">PDF</a></p>
-    </section>
-
-    <footer class="footer">
-      <p>Last updated <span id="currentYear">2026</span>.</p>
-      <p><a href="#top">back to top</a></p>
+    <footer class="foot">
+      <span>this page: <b id="weight">&hellip;</b>, no frameworks, no trackers, rendered in <b id="renderTime">&hellip;</b> in your browser.</span>
+      <span><a href="#top">back to top</a></span>
     </footer>
   </main>
 
